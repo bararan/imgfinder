@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Search Microservice</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            
+            h1 {
+                font-weight: bold;
+            }
+            strong {
+                color: indianred;
+            }
+            code{
+                background: lightsteelgrey;
+            }
+            a {
+                text-decoration: none;
+                color: crimson;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to Simple Image Microservice</h1>
+        <div>This app searches for images on <a href="http://unsplash.it" target="_blank">Unsplash</a><div>
+        <h2>To perform a new search:</h2>
+        <ul>
+            <li>Please append a search term to the address of this page, followed by <strong>"/search/"</strong></li>
+            <li>If you wish to view further results add a page offset to the end of the search query, followed by <strong>?page=</strong></li>
+        </ul>
+        <h2>To view the latest searches:</h2>
+        <div>Append <strong>/latest</strong> to the page address</div>
+        </br>
+        <h2>Example use:</h2>
+        <h3>To search for images of iguanas use the following</h3>
+        <code><a href="https://simpleimgfinder.herokuapp.com/search/iguanas">https://simpleimgfinder.herokuapp.com/search/iguanas</a></code>
+        <h3>To search for images of iguanas but skip to the second page of results:</h3>
+        <code><a href="https://simpleimgfinder.herokuapp.com/search/iguanas?page=2">https://simpleimgfinder.herokuapp.com/search/iguanas?page=2</a></code>
+        <h3>Finally, to view the last ten queries to this app type</h3>
+        <code><a href ="https://simpleimgfinder.herokuapp.com/latest">https://simpleimgfinder.herokuapp.com/latest</a></code>
+        
+    </body>
+</html>
